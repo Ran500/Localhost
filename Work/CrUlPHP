@@ -1,0 +1,40 @@
+curl_setopt ( conn , options , value ) ;
+
+
+# initialize 
+
+
+$init = curl_init(); 		// This is For start Fun
+
+# set options
+
+ 1 -  curl_setopt ( $init , CURLOPT_URL , 'www.google.com'); // Conect 
+ 2 -  curl_setopt ( $init , CURLOPT_RETUNTRANSFER , true ); // rutern value
+ 3 -  curl_setopt ( $init , CURLOPT_HEADER , true ); 	// haeder for website 
+
+
+
+# execute 
+
+$output = curl_exec($init);
+
+$info = curl_getinfo($init); // getinformashn all website and this the array
+
+print_r($info); // This is for show all info 
+
+echo $info['id'] ;
+
+
+// 
+
+curl_close($init);
+
+
+
+
+
+op :
+
+curlopt_url	// Thsi is for content 
+CURLOPT_RETUNTRANSFER     // This is for rutern the content 
+ 
