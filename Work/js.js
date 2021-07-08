@@ -14,7 +14,7 @@ async function get() {
 
     const data = await response.json()
 
-    console.log(data[0]);
+    console.log(data);
 
     // document.getElementById('Test').innerHTML = data[0].name;
 }
